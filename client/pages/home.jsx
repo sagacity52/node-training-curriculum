@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DashboardPage = React.createClass({
+const HomePage = React.createClass({
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ const DashboardPage = React.createClass({
   },
 });
 
-export default DashboardPage;
+export default HomePage;
