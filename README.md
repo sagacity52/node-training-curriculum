@@ -44,11 +44,9 @@ Please make a pull request if you:
 1. Download a command line tool. We recommend `iTerm`
 1. Download an IDE. We recommend `Atom` first then `Sublime Text 3`
 1. Download `brew` if you don't have it
-1. Run `brew install node` on command line
+1. Download Node from [here](https://nodejs.org/en/)
 1. Run `brew install git` on command line
-1. Run `npm install -g n` on command line
 1. Run `npm install -g foreman` on command line
-1. Run `n latest` on command line
 1. Run `npm install -g eslint` on command line
 1. If you haven't added your laptop's SSH key to Github, [follow these instructions](https://help.github.com/articles/generating-ssh-keys/)
 1. Fork this repository
