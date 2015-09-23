@@ -10,7 +10,11 @@ const Home = React.createClass({
     <div className="container-fluid">
       <Grid>
       	<Row> 
-        <img src={profile} className="img-reponsive" alt="Jakob Booker"></img>
+          <Col>
+          <Link to={'/SECRETPAGE'}>
+            <img src={profile} className="img-reponsive" alt="Jakob Booker"></img>
+          </Link>
+          </Col>
           <Col>
             <h1 className="basic_centered">Home</h1>
           </Col>
@@ -33,7 +37,7 @@ const Home = React.createClass({
             <li> Video Games </li>
             <li> Selective Listening </li>
             <li> Procrastinating </li>
-            <li> Finishing Tasks </li>
+            <li> Complaining </li>
             <li> Sleeping </li>
             <li> Video Games </li>
           </ul>

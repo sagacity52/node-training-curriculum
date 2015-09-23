@@ -24,6 +24,19 @@ const BlogPage = React.createClass({
             		<h4 className="basic_centered"><Link to={'/contact'}>Contact</Link></h4>
           		</Col>
       		</Row>
+      		<Row>
+      			<p>
+      				<div> Welcome to my blog. In this blog I will talk about some of the </div>
+      				<div> things that I have suffered while trying to learn react js. </div>
+      				<div> 
+      					<ul>
+      						<li> How to set up react-bootstrap </li>
+      						<li> How to use images </li>
+      						<li> How to make links </li>
+      					</ul>
+      				</div>
+      			</p>
+      		</Row>
         </Grid>
       </div>
     );
