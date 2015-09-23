@@ -5,16 +5,16 @@ import { Route } from 'react-router';
 import ContainerLayout from 'client/layouts/container';
 
 // Pages
-import Home from 'client/pages/home';
-import Blog from 'client/pages/blog';
-import Skills from 'client/pages/skills';
-import Contact from 'client/pages/contactinfo';
+import HomePage from 'client/pages/home';
+import BlogPage from 'client/pages/blog';
+import SkillsPage from 'client/pages/skills';
+import ContactPage from 'client/pages/contactinfo';
 
 export default (
   <Route handler={ContainerLayout}>
-    <Route name='home' path='/' handler={Home} />
-    <Route name='blog' path='/blog' handler={Blog} />
-    <Route name='skills' path='/skills' handler={Skills} />
-    <Route name='contact' path='/contact' handler={Contact} />
+    <Route name='home' path='/' handler={HomePage} />
+    <Route name='blog' path='/blog' handler={BlogPage} />
+    <Route name='skills' path='/skills' handler={SkillsPage} />
+    <Route name='contact' path='/contact' handler={ContactPage} />
   </Route>
 );
