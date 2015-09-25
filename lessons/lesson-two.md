@@ -23,7 +23,7 @@ Let's make our pages a bit more dynamic.
   For example if your name was Bruce Wayne, CEO, when the user clicks night job, his name would change to
   Batman, his job would change to Crime Fighter and his image would change to his Batman costume.
 
-  This requires editing state. Check these (React docs)[https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html] for more information.
+  This requires editing state. Check these [React docs](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html) for more information.
 
 ### The Contact Information page
   - [ ] Create a form that the user can fill out that says "Contact Me" and includes a Name text input,
@@ -31,7 +31,7 @@ Let's make our pages a bit more dynamic.
   - [ ] The page should have a React-Bootstrap Button that says "Send"
   - [ ] When the user clicks send, it displays a message that either says "We will contact you shortly at {email}" or "We will contact you shortly at {phoneNumber}" depending on their preferred Contact Method.
 
-  Take a look at (building forms in React)[https://facebook.github.io/react/docs/forms.html]
+  Take a look at [building forms in React](https://facebook.github.io/react/docs/forms.html)
 
 ### Top Secret page
   - [ ] Previously we would always redirect a user from the Top Secret page back to the home page. Now
