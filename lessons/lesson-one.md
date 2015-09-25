@@ -63,6 +63,39 @@ To install a package type `npm install --save {packageName}`
 
 Usually the NPM package name matches up with the Github project name, but not always. If you are ever unsure what you are installing, you can go to [NPM](http://npmjs.org) and search for the package name. Try searching for `react-bootstrap` and on the NPM page you can see which Github URL the library is connected to.
 
+Note: When you npm install react-bootstrap, you will have access to their (modules available)[https://github.com/react-bootstrap/react-bootstrap/tree/master/src]
+
+That means from `home.jsx` you can import any of those modules like this:
+
+`import { Button, Col, Row } from 'react-bootstrap'`
+
+Then in the render method you can use the use modules you just imported like this:
+
+```js
+  render() {
+    return (
+      <div>
+        <h2 className='hello-world'>
+          Hello World!
+        </h2>
+        <Button>This is a react-bootstrap Button</Button>
+      </div>
+    )
+  }
+```
+
+You will notice that the SCSS styles don't work by default however. You need to download the (SCSS
+stylesheet)[http://getbootstrap.com/getting-started/] in order for the styles to start working.
+Remember SCSS is a subset of SASS.
+
+So, you downloaded the files and untarred them.
+
+Next you need to move them to your `sass` folder under assets. Once added your app.scss file needs to import
+the `_bootstrap.scss` file. If you don't put all the folders and files in the sass directly you will need to
+manually update the paths of the fonts folder in `_variables.scss`. It you get an error when transpiling the
+code, it probably means the paths of your imports are incorrect either in `app.scss` or one of the bootstrap
+files that imports other bootstrap files.
+
 ### The Router and Redirects
 
 Look at react-router for help on redirecting the from one page to another, whether it's because they clicked a link or because they don't have permission to access the page
