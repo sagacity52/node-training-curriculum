@@ -17,6 +17,6 @@ export default (
     <Route name='blog' path='/blog' handler={BlogPage} />
     <Route name='skills' path='/skills' handler={SkillsPage} />
     <Route name='contact' path='/contact' handler={ContactPage} />
-    <Route name='secret' path='/SECRETPAGE' handler={SecretPage} />
+    <Route name='secret' path='/secret' handler={SecretPage} />
   </Route>
 );

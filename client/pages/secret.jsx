@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col, Grid} from 'react-bootstrap';
-import {Link} from 'react-router';
+// import {Link} from 'react-router';
 
 const SecretPage = React.createClass({
   render() {
@@ -11,9 +11,6 @@ const SecretPage = React.createClass({
               <Col>
             		<h1 className="basic_centered">Secret</h1>
           	  </Col>
-              <Col md={1}>
-      		  		<h4 className="basic_centered"><Link to={'/'}>Home</Link></h4>
-              </Col>
               <Col md={4}>
                 <h5 className="basic_centered"><a href='http://www.nyan.cat/'>Secret Link</a></h5>
               </Col>
