@@ -58,6 +58,15 @@ Let's make our pages a bit more dynamic.
 
 You already have GIT installed and you were able to fork the repository on Github and clone the code locally.
 
+If you got a :+1: on lesson one from the Colony American team, you can close the pull request to our repository,
+make a pull request for your lesson-one branch to your master branch and merge it. Locally you will run the following commands.
+
+1. `git checkout master`
+1. `git pull` When you run git pull, you will receive your merged master commits from lesson one.
+
+To start the lesson two changes after merging lesson one into your master branch:
+
+1. `git checkout master`
 1. Use what you learned in the previous lesson to create a new branch called `lesson-two`.
 1. Add all your updated files, commit them with a message, and make a pull request to the Colony American remote project.
 
