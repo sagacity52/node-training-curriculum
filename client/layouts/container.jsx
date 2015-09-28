@@ -15,9 +15,9 @@ const ContainerLayout = React.createClass({
   },
 
   onSelect(path) {
-    this.setState({ activeTab : path });
-    this.transitionTo(path);
-  },
+      this.setState({ activeTab : path });
+      this.transitionTo(path);
+    },
 
 
   render() {

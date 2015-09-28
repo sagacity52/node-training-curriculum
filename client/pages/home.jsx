@@ -2,13 +2,16 @@ import React from 'react';
 import {Row, Grid} from 'react-bootstrap';
 // import {Link} from 'react-router';
 
-// import profile from 'client/assets/images/Profile.jpg';
+import profile from 'client/assets/images/Profile.jpg';
 
 const Home = React.createClass({
   render() {
     return (
       <div className='container-fluid'>
         <Grid>
+          <Row>
+            <img src={profile} ></img>
+          </Row>
           <Row>
             <h2> </h2>
           </Row> 
