@@ -36,7 +36,7 @@ Let's make our pages a bit more dynamic.
 ### Top Secret page
   - [ ] Previously we would always redirect a user from the Top Secret page back to the home page. Now
   we want to check in `componentWillMount` if the URL has `?userId=1` in it. If it does, don't redirect.
-  Look at
+  Look at React Router for documentation for tips on how to pull key value pairs from the query string.
   - [ ] The render method two sections
   - [ ] The first section is titled `Bank Account` and underneath it should
   have the total amount of money in your Superhero bank account in green
