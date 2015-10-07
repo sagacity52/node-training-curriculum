@@ -52,7 +52,7 @@ Tips:
 
 `_.each` is one way to loop over collections but it doesn't return anything, so you would need to create temporary variables that store calculations made within the loop.
 
-`_.map` is a way to loop over collections and return values. This is really handle for converting an array into JSX.
+`_.map` is a way to loop over collections and return values. This is really handy for converting an array into JSX.
 
 `_.contains` is good for checking if a string exists in an array.
 
