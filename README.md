@@ -55,7 +55,7 @@ Please make a pull request if you:
 1. Run `git clone {sshUrl}` on command line
 1. Run `npm install` on command line
 1. Run `cp dev.env .env` in your node-training-curriculum directory
-1. Run `nf run node index.js webpack` on command line
+1. Run `make client` on command line
 1. In your web browser go to `http://localhost:8080`
 1. Start lesson 1!
 
