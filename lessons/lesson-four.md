@@ -4,7 +4,7 @@
 
 ### First Deploy!
 
-In previous lessons we were running webpack to transpile our JSX and server frontend javascript only.
+In previous lessons we were running webpack to transpile our JSX and serve frontend javascript only.
 
 Now we will create a hosted backend server so when the user hits the `/` route it will serve the transpiled frontend code and then as the user clicks on the different tabs of your site, ReactRouter will handle the URL route changes, not the backend server.
 
