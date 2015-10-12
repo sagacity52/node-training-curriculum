@@ -9,7 +9,7 @@ const SecretPage = React.createClass({
       	<Grid>
       		<Row>
               <Col md={12}>
-                <h5 className="basic_centered"><a href='http://www.nyan.cat/'>Secret Link</a></h5>
+                <h5 className="simplepad"><a href='http://instantcena.com/'>Secret Link</a></h5>
               </Col>
       		</Row>
         </Grid>
