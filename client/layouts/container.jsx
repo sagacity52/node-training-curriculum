@@ -33,7 +33,7 @@ const ContainerLayout = React.createClass({
       <Grid>
       	<Row>
             <Col>
-              <Nav bsStyle="pills">
+              <Nav bsStyle="tabs">
                 <NavItem eventKey={1} 
                   onClick={this.onSelect.bind(null, '/')}
                   active={isHomeActive}>Home</NavItem>

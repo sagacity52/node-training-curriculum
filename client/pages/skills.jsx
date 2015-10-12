@@ -22,6 +22,17 @@ const SkillsPage = React.createClass({
               </ul>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <p className = 'simplepad'>
+                <h4>React Lessons</h4>
+                <h5>Number 1: States</h5>
+                <div>React states are like variables, except for js components. </div>
+                <div>Js components are affected by the current state and are visualized </div>
+                <div>through the render method. A component can have as many states as needed.</div>
+              </p>
+            </Col>
+          </Row>
         </Grid>
       </div>
     );

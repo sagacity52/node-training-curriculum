@@ -5,7 +5,29 @@ import {Row, Grid} from 'react-bootstrap';
 import profile from 'client/assets/images/Profile.jpg';
 
 const Home = React.createClass({
+
+  getInitialState() {
+    return { 
+      // Name 
+      firstName : 'Jakob',
+      lastName : 'Booker',
+      isHero : false,
+      heroFirstName : 'The',
+      heroLastName : 'Milkman',
+
+      // Picture
+
+    };
+  },
+
+  buttonPress() {
+    this.setState({isHero : !this.state.isHero});
+  },
+
   render() {
+    let currentFirstName = this.state.isHero ? this.state.heroFirstName : this.state.firstName;
+    let currentLastName = this.state.isHero ? this.state.heroLastName : this.state.lastName;
+
     return (
       <div className='container-fluid'>
         <Grid>
@@ -13,7 +35,7 @@ const Home = React.createClass({
             <img src={profile} ></img>
           </Row>
           <Row>
-            <h2> </h2>
+            <h2> {currentFirstName} {currentLastName}</h2>
           </Row> 
           <Row>
             <h5>Things I'm Good At:</h5>
@@ -48,6 +70,11 @@ const Home = React.createClass({
               with </div>
               <div>what I can develop for them.</div>
             </p>
+          </Row>
+          <Row>
+            <button className='btn btn-primary'
+            onClick = {this.buttonPress}>
+            {this.state.isHero ? 'Day Job' : 'Night Job'}</button>
           </Row>
         </Grid>
       </div>
