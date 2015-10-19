@@ -17,7 +17,7 @@ const Home = React.createClass({
       heroLastName : 'Milkman',
 
       // Picture
-      currentProf : '',
+      currentProf : profile,
 
     };
   },
