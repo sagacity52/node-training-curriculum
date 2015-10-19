@@ -3,6 +3,7 @@ import {Row, Grid} from 'react-bootstrap';
 // import {Link} from 'react-router';
 
 import profile from 'client/assets/images/Profile.jpg';
+import hero from 'client/assets/images/TheRealMilkman.jpg';
 
 const Home = React.createClass({
 
@@ -16,12 +17,21 @@ const Home = React.createClass({
       heroLastName : 'Milkman',
 
       // Picture
+      currentProf : '',
 
     };
   },
 
   buttonPress() {
     this.setState({isHero : !this.state.isHero});
+    if (this.state.isHero)
+      this.setState({currentProf : profile});
+    else
+      this.setState({currentProf : hero});
+  },
+
+  setPicture() {
+    return this.state.currentProf;
   },
 
   render() {
@@ -32,7 +42,7 @@ const Home = React.createClass({
       <div className='container-fluid'>
         <Grid>
           <Row>
-            <img src={profile} ></img>
+            <img src={this.setPicture()}></img>
           </Row>
           <Row>
             <h2> {currentFirstName} {currentLastName}</h2>

@@ -15,6 +15,7 @@ const ContactPage = React.createClass({
       setContactRadio : '',
 
       submit : '',
+      disabled : true,
     };
   },
 
@@ -28,6 +29,7 @@ const ContactPage = React.createClass({
 
   handleRadio(radio) {
     this.setState({setContactRadio : radio});
+    this.setState({disabled : false});
   },
 
   isRadioChecked(radio) {
@@ -39,7 +41,6 @@ const ContactPage = React.createClass({
     (this.state.setContactRadio) + '.'});
   },
 
-
   render() {
     let fName = this.state.firstName;
     let lName = this.state.lastName;
@@ -49,7 +50,8 @@ const ContactPage = React.createClass({
     let submitLabel = this.state.submit;
     let submitButton = this.state.activeForm ? 
     <button className='btn btn-primary simplepad'
-    onClick={this.handleSubmit}>Submit</button> : null;
+    onClick={this.handleSubmit}
+    disabled={this.state.disabled}>Submit</button> : null;
 
     let formFirst = this.state.activeForm ? <input className='simplepad'
       value={fName} placeholder="First Name"
