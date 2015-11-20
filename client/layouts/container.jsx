@@ -26,6 +26,7 @@ const ContainerLayout = React.createClass({
     const isBlogActive = this.state.activeTab === '/blog';
     const isSkillsActive = this.state.activeTab === '/skills';
     const isContactActive = this.state.activeTab === '/contact';
+    const isLodashActive = this.state.activeTab === '/lodash';
     const isSecretActive = this.state.activeTab === '/secret';
 
     return (
@@ -34,26 +35,29 @@ const ContainerLayout = React.createClass({
       	<Row>
             <Col>
               <Nav bsStyle="tabs">
-                <NavItem eventKey={1} 
+                <NavItem eventKey={1}
                   onClick={this.onSelect.bind(null, '/')}
                   active={isHomeActive}>Home</NavItem>
-                <NavItem eventKey={2} 
+                <NavItem eventKey={2}
                   onClick={this.onSelect.bind(null, '/blog')}
                   active={isBlogActive}>Blog</NavItem>
-                <NavItem eventKey={3} 
+                <NavItem eventKey={3}
                   onClick={this.onSelect.bind(null, '/skills')}
                   active={isSkillsActive}>Skills</NavItem>
-                <NavItem eventKey={4} 
+                <NavItem eventKey={4}
                   onClick={this.onSelect.bind(null, '/contact')}
                   active={isContactActive}>Contact Info</NavItem>
-                <NavItem eventKey={5} 
+                <NavItem eventKey={5}
+                  onClick={this.onSelect.bind(null, '/lodash')}
+                  active={isLodashActive}>Lodash Info</NavItem>
+                <NavItem eventKey={6}
                   onClick={this.onSelect.bind(null, '/secret')}
                   active={isSecretActive}>Secret</NavItem>
               </Nav>
             </Col>
           </Row>
         </Grid>
-        
+
         <Router.RouteHandler {...this.props} />
 
       </div>

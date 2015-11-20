@@ -9,6 +9,7 @@ import HomePage from 'client/pages/home';
 import BlogPage from 'client/pages/blog';
 import SkillsPage from 'client/pages/skills';
 import ContactPage from 'client/pages/contactinfo';
+import LodashPage from 'client/pages/lodash';
 import SecretPage from 'client/pages/secret';
 
 export default (
@@ -17,6 +18,7 @@ export default (
     <Route name='blog' path='/blog' handler={BlogPage} />
     <Route name='skills' path='/skills' handler={SkillsPage} />
     <Route name='contact' path='/contact' handler={ContactPage} />
+    <Route name='lodash' path='/lodash' handler={LodashPage} />
     <Route name='secret' path='/secret' handler={SecretPage} />
   </Route>
 );

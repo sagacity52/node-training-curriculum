@@ -19,6 +19,7 @@ const SkillsPage = React.createClass({
                   </ul>
                 </li>
                 <li><a href='https://unity3d.com/unity'>Unity</a></li>
+                <li><a href='https://lodash.com/docs#'>Lodash</a></li>
               </ul>
             </Col>
           </Row>
