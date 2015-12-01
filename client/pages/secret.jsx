@@ -34,8 +34,8 @@ const SecretPage = React.createClass({
   },
 
   handleBuy() {
-    var temp = this.state.temp;
-    if (temp.sku === '' || temp.name === '' || temp.type === '' || temp.cost === '') {
+    const temp = this.state.temp;
+    if (! (temp.sku && temp.name && temp.type && temp.cost)) {
       this.setState({submit : 'Missing 1 or more fields'});
     } else {
       var push = { sku : temp.sku, name : temp.name, type : temp.type, cost : temp.cost };
@@ -45,7 +45,7 @@ const SecretPage = React.createClass({
   },
 
   resetTemp() {
-    var temp = this.state.temp;
+    const temp = this.state.temp;
     temp.sku = '';
     temp.name = '';
     temp.type = '';
@@ -100,21 +100,20 @@ const SecretPage = React.createClass({
       return null;
     }
 
-    // Search only Filter
+    // Search Filters
     if (search) {
-      filteredTools = _.filter(tools, (tool) => {
+      filteredTools = _.filter(filteredTools, (tool) => {
         return _.includes(tool.name, search) ? tool.name : null;
       });
     }
 
-    // Cost only Filter
     if (searchCost) {
       if (this.state.drop) {
-        filteredTools = _.filter(tools, (tool) => {
+        filteredTools = _.filter(filteredTools, (tool) => {
           return tool.cost < searchCost;
         });
       } else {
-        filteredTools = _.filter(tools, (tool) => {
+        filteredTools = _.filter(filteredTools, (tool) => {
           return tool.cost > searchCost;
         });
       }
